@@ -3,7 +3,7 @@
  * 解析信息到 mysql 数据库
  */
 let sqlite3 = require('sqlite3').verbose()
-let db = new sqlite3.Database('sqlite.db')
+let db = new sqlite3.Database('../sqlite.db')
 
 const readline = require('readline')
 const fs = require('fs')
@@ -13,7 +13,7 @@ async function run () {
 
   // 插入数据
   const rl = readline.createInterface({
-    input: fs.createReadStream(`${__dirname}/mobilearea.txt`)
+    input: fs.createReadStream(`${__dirname}/../data/mobile-area.txt`)
   })
   let subSQL = []
   await new Promise((resolve, reject) => {

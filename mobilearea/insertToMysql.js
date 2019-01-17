@@ -45,7 +45,7 @@ async function run () {
 
   // 插入数据
   const rl = readline.createInterface({
-    input: fs.createReadStream(`${__dirname}/mobilearea.txt`)
+    input: fs.createReadStream(`${__dirname}/../data/mobile-area.txt`)
   })
   let subSqls = []
   await new Promise((resolve, reject) => {
