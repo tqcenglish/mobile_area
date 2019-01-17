@@ -6,4 +6,5 @@ mobilearea.txt 包含了手机号前缀所在区域信息, 可用于查询号码
 
 ``` javascript
 node insertToMysql.js
+node insertSqlite.js
 ```
